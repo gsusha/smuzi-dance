@@ -309,11 +309,13 @@ html,body {
 		align-items: center;
 
 		.why__title {
+			text-align: center;
 			font-size: 32px;
 			font-weight: 700;
 		}
 
 		.why__subtitle {
+			text-align: center;
 			font-size: 18px;
 			margin: 0 0 40px 0;
 		}
@@ -368,11 +370,13 @@ html,body {
 		.programs__title {
 			font-size: 32px;
 			font-weight: 700;
+			text-align: center;
 		}
 
 		.programs__subtitle {
 			font-size: 18px;
 			margin: 0 0 40px 0;
+			text-align: center;
 		}
 
 		.programs__btn a {
@@ -585,6 +589,7 @@ html,body {
 		.form__subtitle {
 			font-size: 18px;
 			margin: 0 0 40px 0;
+			text-align: center;
 		}
 
 		.form__form {
@@ -651,6 +656,7 @@ html,body {
 		}
 	}
 }
+
 
 .footer {
 	padding: 20px 0;

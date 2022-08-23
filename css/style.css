@@ -371,10 +371,12 @@ html, body {
           align-items: center;
 }
 .why .why__body .why__title {
+  text-align: center;
   font-size: 32px;
   font-weight: 700;
 }
 .why .why__body .why__subtitle {
+  text-align: center;
   font-size: 18px;
   margin: 0 0 40px 0;
 }
@@ -431,10 +433,12 @@ html, body {
 .programs .programs__body .programs__title {
   font-size: 32px;
   font-weight: 700;
+  text-align: center;
 }
 .programs .programs__body .programs__subtitle {
   font-size: 18px;
   margin: 0 0 40px 0;
+  text-align: center;
 }
 .programs .programs__body .programs__btn a {
   display: inline-block;
@@ -645,6 +649,7 @@ html, body {
 .form .form__body .form__subtitle {
   font-size: 18px;
   margin: 0 0 40px 0;
+  text-align: center;
 }
 .form .form__body .form__form form {
   display: -webkit-box;
@@ -742,8 +747,20 @@ html, body {
   font-weight: 700;
 }
 
-/* Параметры для экранов меньше 767px */
-@media (max-width: 767px) {
+/* Параметры для экранов меньше 1024px */
+@media (max-width: 1024px) {
+  .programs .programs__body .programs__grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teachers .teachers__body .teachers__grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Параметры для экранов меньше 768px */
+@media (max-width: 768px) {
   body.lock {
     overflow: hidden;
   }
@@ -812,7 +829,7 @@ html, body {
   .header .header__name {
     font-size: 20px;
   }
-  .header .header__menu {
+  .header .header__body .header__menu {
     position: fixed;
     overflow: auto;
     top: -100%;
@@ -825,10 +842,7 @@ html, body {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-  .header .header__menu.active {
-    top: 0;
-  }
-  .header .header__list {
+  .header .header__body .header__menu .header__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -837,17 +851,93 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
-  .header .header__list li {
+  .header .header__body .header__menu .header__list li {
     margin: 0px 0px 60px 0px;
   }
-  .header .header__link a {
+  .header .header__body .header__menu .header__link a {
     color: #292929 !important;
+  }
+  .header .header__body .header__menu .header__contact a {
+    color: #292929 !important;
+    border-color: #292929 !important;
+  }
+  .header .header__body .header__menu.active {
+    top: 0;
   }
 
   /* меню при прокрутке */
   .header.bg .header__burger:before,
 .header.bg .header__burger:after, .header.bg .header__burger span {
     background-color: #292929;
+  }
+}
+/* Параметры для экранов меньше 426px */
+@media (max-width: 426px) {
+  .cta .cta__body .cta__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .cta .cta__body .cta__subtitle {
+    font-size: 18px;
+  }
+  .cta .cta__bg {
+    display: none;
+  }
+
+  .welcome .welcome__body .welcome__supertitle {
+    font-size: 26px;
+  }
+  .welcome .welcome__body .welcome__subtitle {
+    width: 100%;
+  }
+
+  .why .why__body .why__title {
+    font-size: 26px;
+  }
+  .why .why__body .why__subtitle {
+    font-size: 16px;
+  }
+  .why .why__body .why__row {
+    width: 100%;
+  }
+
+  .programs .programs__body .programs__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+  }
+  .programs .programs__body .programs__subtitle {
+    font-size: 16px;
+  }
+  .programs .programs__body .programs__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .teachers .teachers__body .teachers__title {
+    font-size: 26px;
+  }
+  .teachers .teachers__body .teachers__subtitle {
+    font-size: 16px;
+  }
+  .teachers .teachers__body .teachers__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .rules .rules__body .rules__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .form .form__body .form__title {
+    font-size: 26px;
+  }
+  .form .form__body .form__subtitle {
+    font-size: 16px;
   }
 }

@@ -1,5 +1,24 @@
-/* Параметры для экранов меньше 767px */
-@media (max-width: 767px) {
+/* Параметры для экранов меньше 1024px */
+@media (max-width: 1024px) {
+	.programs {
+		.programs__body {
+			.programs__grid {
+				grid-template-columns: 1fr 1fr;
+			}
+		}	
+	}
+
+	.teachers {
+		.teachers__body {
+			.teachers__grid {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+}
+
+/* Параметры для экранов меньше 768px */
+@media (max-width: 768px) {
 
 	body.lock {
 		overflow: hidden;
@@ -67,38 +86,48 @@
 
 		.header__name {
 			font-size: 20px;
+		}
+
+		.header__body {
+			.header__menu {
+				position: fixed;
+				overflow: auto;
+				top: -100%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				color: #292929;
+				padding: 120px 20px 30px 20px;
+				transition: all 0.3s ease 0s;
+
+				.header__list {
+					display: flex;
+					flex-direction: column;
+					font-size: 20px;
+					align-items: start;
+				}
+
+				.header__list li {
+					margin: 0px 0px 60px 0px;
+				}
+
+				.header__link a {
+					color: #292929!important;
+				}
+
+				.header__contact a {
+					color: #292929!important;
+					border-color: #292929!important;
+				}
+
 			}
 
-		.header__menu {
-			position: fixed;
-			overflow: auto;
-			top: -100%;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #fff;
-			color: #292929;
-			padding: 120px 20px 30px 20px;
-			transition: all 0.3s ease 0s;
+			.header__menu.active {
+				top: 0;
+			}	
 		}
-
-		.header__menu.active {
-			top: 0;
-		}
-
-		.header__list {
-			display: flex;
-			flex-direction: column;
-			font-size: 20px;
-		}
-
-		.header__list li {
-			margin: 0px 0px 60px 0px;
-		}
-
-		.header__link a {
-			color: #292929!important;
-		}
+		
 	}
 
 	/* меню при прокрутке */
@@ -107,6 +136,100 @@
 		.header__burger:before,
 		.header__burger:after, .header__burger span {
 			background-color: #292929;
+		}
+	}
+}
+
+/* Параметры для экранов меньше 426px */
+@media (max-width: 426px) {
+	.cta {
+		.cta__body {
+			.cta__title {
+				font-size: 32px;
+				line-height: 36px;
+			}
+			.cta__subtitle {
+				font-size: 18px;
+			}
+		}
+		.cta__bg {
+			display: none;
+		}
+	}
+
+	.welcome {
+		.welcome__body {
+			.welcome__supertitle {
+				font-size: 26px;
+			}
+			.welcome__subtitle {
+				width: 100%;
+			}
+		}
+	}
+
+	.why {
+		.why__body {
+			.why__title {
+				font-size: 26px;
+			}
+			.why__subtitle {
+				font-size: 16px;
+			}
+
+			.why__row {
+				width: 100%;
+			}
+		}
+	}
+
+	.programs {
+		.programs__body {
+			.programs__title {
+				font-size: 26px;
+				line-height: 30px;
+				margin: 0 0 10px 0;
+			}
+			.programs__subtitle {
+				font-size: 16px;
+			}
+			.programs__grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	.teachers {
+		.teachers__body {
+			.teachers__title {
+				font-size: 26px;
+			}
+			.teachers__subtitle {
+				font-size: 16px;
+			}
+			.teachers__grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	.rules {
+		.rules__body {
+			.rules__title {
+				font-size: 26px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	.form {
+		.form__body {
+			.form__title {
+				font-size: 26px;
+			}
+			.form__subtitle {
+				font-size: 16px;
+			}
 		}
 	}
 }
