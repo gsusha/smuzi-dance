@@ -1,8 +1,9 @@
+@use "null";
 @use 'variables';
 @use 'mixins';
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: $font-family-primary;
   background-color: $bg-color;
   color: $text-color;
   margin: 0;

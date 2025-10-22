@@ -6,10 +6,7 @@ export default defineNuxtConfig({
     preset: 'static'
   },
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/icon'
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/fonts'],
   alias: {
     '@img': '/assets/img',
     '@ui': '/components/ui',
@@ -40,5 +37,21 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+  fonts: {
+    families: [
+      {
+        name: 'Work Sans',
+        provider: 'google',
+        weights: [400, 500, 600, 700],
+        styles: ['normal'],
+      },
+      {
+        name: 'Unbounded',
+        provider: 'google',
+        weights: [800],
+        styles: ['normal'],
+      },
+    ],
+  },
 })
