@@ -1,0 +1,9 @@
+@use 'variables';
+@use 'mixins';
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+}
