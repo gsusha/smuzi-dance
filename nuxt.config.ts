@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     preset: 'static'
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/fonts'],
+  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/fonts', 'nuxt-svgo'],
   alias: {
     '@img': '/assets/img',
     '@ui': '/components/ui',
@@ -49,9 +49,30 @@ export default defineNuxtConfig({
       {
         name: 'Unbounded',
         provider: 'google',
-        weights: [800],
+        weights: [700, 800],
         styles: ['normal'],
       },
     ],
+  },
+  svgo: {
+    autoImportPath: '@/assets/images/',
+    defaultImport: 'component',
+    svgoConfig: {
+      multipass: true,
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              inlineStyles: {
+                onlyMatchedOnce: false,
+              },
+              removeDoctype: false,
+              removeViewBox: false,
+            },
+          },
+        },
+      ],
+    },
   },
 })

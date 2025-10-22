@@ -3,8 +3,9 @@
 @use 'mixins';
 
 body {
-  font-family: $font-family-primary;
-  background-color: $bg-color;
-  color: $text-color;
+  font-size: 16px;
+  font-family: variables.$font-family-primary;
+  background-color: variables.$bg-color;
+  color: variables.$text-color-primary;
   margin: 0;
 }

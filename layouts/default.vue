@@ -2,7 +2,9 @@
 
 <template>
   <div class="layouts-default">
+    <BaseHeader />
     <slot/>
+    <BaseFooter />
   </div>
 </template>
 
