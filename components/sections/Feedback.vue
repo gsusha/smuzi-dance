@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <SectionsWhy />
+
 </template>
+
+<style lang="scss" scoped />
