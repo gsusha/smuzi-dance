@@ -16,6 +16,7 @@ const map = shallowRef<null | YMap>(null)
 <template>
   <div class="contacts-map">
     <YandexMap
+      class="contacts-map__map"
       v-model="map"
       :settings="{
         location: {
@@ -48,6 +49,10 @@ const map = shallowRef<null | YMap>(null)
   canvas {
     filter: grayscale(1) brightness(0.5);
     border-radius: 20px;
+  }
+
+  &__map {
+    pointer-events: none;
   }
 
   &__hint {

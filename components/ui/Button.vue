@@ -57,5 +57,11 @@ withDefaults(defineProps<UiButtonProps>(), {
     display: flex;
     align-items: center;
   }
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 12px 4px rgba($accent, 0.6);
+  }
 }
 </style>
