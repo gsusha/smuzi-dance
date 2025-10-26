@@ -1,35 +1,68 @@
 <script lang="ts" setup>
+import { main } from '~/data/sections'
 </script>
 
 <template>
   <div class="main">
-    <video
-        class="main__video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="none"
-        poster="/poster.webp"
-    >
-      <source src="/background.webm" type="video/webm"/>
-    </video>
+    <div class="main__video">
+      <video autoplay muted loop playsinline preload="none" poster="/poster.webp">
+        <source src="/background.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <div class="main__content">
+      <h1 class="main__content-title">
+        {{ main.title }}
+      </h1>
+      <UiButton :text="main.button.text" :icon-right="main.button.icon" :link="main.button.link" />
+    </div>
+
     <div class="main__bottom" />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 100vh;
 
   &__video {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 100vw;
-    min-height: 100vh;
-    object-fit: cover;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: $black;
+      opacity: 0.3;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &-title {
+      font-family: $font-family-secondary;
+      font-size: 48px;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 70%;
+    }
   }
 
   &__bottom {
@@ -39,8 +72,9 @@
     right: 0;
     height: 170px;
     width: 100%;
+    pointer-events: none;
 
-    background: linear-gradient(#1b1b1b00 0%, #1B1B1B 100%);
+    background: linear-gradient(rgba($bg-color, 0) 0%, $bg-color 100%);
   }
 }
 </style>

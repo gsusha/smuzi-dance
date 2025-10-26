@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 interface UiTitleProps {
-  title: string;
-  subtitle?: string;
-  titlePosition?: 'left' | 'right' | 'center';
-  subtitlePosition?: 'left' | 'right' | 'center';
+  title: string
+  subtitle?: string
+  titlePosition?: 'left' | 'right' | 'center'
+  subtitlePosition?: 'left' | 'right' | 'center'
 }
 
 withDefaults(defineProps<UiTitleProps>(), {
@@ -14,8 +14,8 @@ withDefaults(defineProps<UiTitleProps>(), {
 
 <template>
   <div class="ui-title">
-    <div class="ui-title__title">{{ title }}</div>
-    <div v-if="subtitle" class="ui-title__subtitle">{{ subtitle }}</div>
+    <h2 class="ui-title__title">{{ title }}</h2>
+    <h3 v-if="subtitle" class="ui-title__subtitle">{{ subtitle }}</h3>
   </div>
 </template>
 

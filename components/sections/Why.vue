@@ -2,21 +2,26 @@
 import { why } from '~/data/sections'
 
 const sentences = why.note
-    .split('.')
-    .map(s => s.trim())
-    .filter(Boolean)
+  .split('.')
+  .map((s) => s.trim())
+  .filter(Boolean)
 </script>
 
 <template>
   <div class="why">
-    <UiTitle :title="why.title" :subtitle="why.subtitle"/>
+    <UiTitle :title="why.title" :subtitle="why.subtitle" />
     <div class="why__cards">
-      <UiCard v-for="card in why.cards" :icon="card.icon" :title="card.title" :subtitle="card.subtitle"/>
+      <UiCard
+        v-for="card in why.cards"
+        :icon="card.icon"
+        :title="card.title"
+        :subtitle="card.subtitle"
+      />
     </div>
     <div class="why__note">
       <span v-for="(s, i) in sentences" :key="i">
         {{ s }}.
-        <br/>
+        <br />
       </span>
     </div>
   </div>
