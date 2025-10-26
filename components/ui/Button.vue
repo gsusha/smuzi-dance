@@ -10,7 +10,7 @@ defineProps<UiButtonProps>()
 </script>
 
 <template>
-  <component :is="link ? 'a' : 'button'" :href="link" class="ui-button">
+  <component :is="link ? 'a' : 'button'" :href="link" target="_blank" class="ui-button">
     <span v-if="iconLeft" class="ui-button__icon ui-button__icon--left">
       <Icon :name="iconLeft" :size="24" />
     </span>
@@ -43,6 +43,8 @@ defineProps<UiButtonProps>()
   font-family: $font-family-secondary;
   font-weight: 700;
   font-size: 16px;
+
+  width: fit-content;
 
   &__icon {
     display: flex;

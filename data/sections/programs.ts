@@ -1,3 +1,5 @@
+import { CTA_BUTTON } from '~/data/common'
+
 export const programs = {
   title: 'Программы',
   subtitle:
@@ -59,5 +61,47 @@ export const programs = {
         },
       ],
     },
+  },
+  disciplines: {
+    title: 'Дисциплины',
+    tags: [
+      {
+        id: 1,
+        name: 'Уроки развития данных',
+      },
+      {
+        id: 2,
+        name: 'Ритмика',
+      },
+      {
+        id: 3,
+        name: 'Классическая хореография',
+      },
+      {
+        id: 4,
+        name: 'Эстрадный танец',
+      },
+      {
+        id: 5,
+        name: 'Гимнастика',
+      },
+      {
+        id: 6,
+        name: 'Контемпорари',
+      },
+      {
+        id: 7,
+        name: 'Акробатика',
+      },
+      {
+        id: 8,
+        name: 'Детский танец',
+      },
+      {
+        id: 9,
+        name: 'Импровизация',
+      },
+    ],
+    button: CTA_BUTTON,
   },
 }

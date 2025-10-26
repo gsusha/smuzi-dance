@@ -24,8 +24,17 @@ import { HorizontalPosition } from '~/types'
     <div class="programs__schedule">
       <UiSubtitle>{{ programs.schedule.title }}</UiSubtitle>
       <div class="programs__schedule-table">
-      <SectionsProgramsTable :table="programs.schedule.table" />
+        <SectionsProgramsTable :table="programs.schedule.table" />
       </div>
+    </div>
+    <div class="programs__disciplines">
+      <UiSubtitle>{{ programs.disciplines.title }}</UiSubtitle>
+      <SectionsProgramsTags :tags="programs.disciplines.tags" />
+      <UiButton
+        :text="programs.disciplines.button.text"
+        :icon-right="programs.disciplines.button.icon"
+        :link="programs.disciplines.button.link"
+      />
     </div>
   </div>
 </template>
@@ -94,10 +103,15 @@ import { HorizontalPosition } from '~/types'
     }
   }
 
-  &__schedule, &__disciplines {
+  &__schedule,
+  &__disciplines {
     display: flex;
     flex-direction: column;
     gap: 60px;
+  }
+
+  &__disciplines {
+    align-items: center;
   }
 }
 </style>

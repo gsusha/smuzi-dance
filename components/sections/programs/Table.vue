@@ -1,24 +1,24 @@
 <script setup lang="ts">
-interface UiTableHeader {
+interface ProgramsTableHeader {
   key: string
   value: string
 }
 
-interface UiTableRow {
+interface ProgramsTableRow {
   id: number
   age: string
   frequency: string
   duration?: string
 }
 
-interface UiTableProps {
+interface ProgramsTableProps {
   table: {
-    header: UiTableHeader[]
-    rows: UiTableRow[]
+    header: ProgramsTableHeader[]
+    rows: ProgramsTableRow[]
   }
 }
 
-defineProps<UiTableProps>()
+defineProps<ProgramsTableProps>()
 </script>
 
 <template>
