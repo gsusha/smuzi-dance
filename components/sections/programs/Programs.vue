@@ -21,6 +21,12 @@ import { HorizontalPosition } from '~/types'
         </div>
       </div>
     </div>
+    <div class="programs__schedule">
+      <UiSubtitle>{{ programs.schedule.title }}</UiSubtitle>
+      <div class="programs__schedule-table">
+      <SectionsProgramsTable :table="programs.schedule.table" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -86,6 +92,12 @@ import { HorizontalPosition } from '~/types'
     &-description {
       font-size: 14px;
     }
+  }
+
+  &__schedule, &__disciplines {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
   }
 }
 </style>

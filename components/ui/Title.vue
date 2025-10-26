@@ -17,9 +17,9 @@ withDefaults(defineProps<UiTitleProps>(), {
 <template>
   <div class="ui-title">
     <h2 class="ui-title__title" :style="{ textAlign: titlePosition }">{{ title }}</h2>
-    <h3 v-if="subtitle" class="ui-title__subtitle" :style="{ textAlign: subtitlePosition }">
+    <h4 v-if="subtitle" class="ui-title__subtitle" :style="{ textAlign: subtitlePosition }">
       {{ subtitle }}
-    </h3>
+    </h4>
   </div>
 </template>
 

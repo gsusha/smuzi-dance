@@ -22,4 +22,42 @@ export const programs = {
       description: 'развитие индивидуальности и артистизма',
     },
   ],
+  schedule: {
+    title: 'Режим занятий',
+    table: {
+      header: [
+        {
+          key: 'age',
+          value: 'Возраст',
+        },
+        {
+          key: 'frequency',
+          value: 'Частота',
+        },
+        {
+          key: 'duration',
+          value: 'Продолжительность',
+        },
+      ],
+      rows: [
+        {
+          id: 1,
+          age: '3-4 года',
+          frequency: '2 раза в неделю',
+          duration: '40–50 минут',
+        },
+        {
+          id: 2,
+          age: '5+ лет',
+          frequency: '3 раза в неделю',
+          duration: '60 минут',
+        },
+        {
+          id: 3,
+          age: 'Все группы',
+          frequency: 'Дополнительно — мастер-классы, репетиции и постановки номеров',
+        },
+      ],
+    },
+  },
 }
