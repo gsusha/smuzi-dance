@@ -1,21 +1,25 @@
 <script lang="ts" setup>
+import { HorizontalPosition } from '~/types'
+
 interface UiTitleProps {
   title: string
   subtitle?: string
-  titlePosition?: 'left' | 'right' | 'center'
-  subtitlePosition?: 'left' | 'right' | 'center'
+  titlePosition?: HorizontalPosition
+  subtitlePosition?: HorizontalPosition
 }
 
 withDefaults(defineProps<UiTitleProps>(), {
-  titlePosition: 'center',
-  subtitlePosition: 'center',
+  titlePosition: HorizontalPosition.Center,
+  subtitlePosition: HorizontalPosition.Center,
 })
 </script>
 
 <template>
   <div class="ui-title">
-    <h2 class="ui-title__title">{{ title }}</h2>
-    <h3 v-if="subtitle" class="ui-title__subtitle">{{ subtitle }}</h3>
+    <h2 class="ui-title__title" :style="{ textAlign: titlePosition }">{{ title }}</h2>
+    <h3 v-if="subtitle" class="ui-title__subtitle" :style="{ textAlign: subtitlePosition }">
+      {{ subtitle }}
+    </h3>
   </div>
 </template>
 
@@ -24,16 +28,16 @@ withDefaults(defineProps<UiTitleProps>(), {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  width: 100%;
 
   &__title {
     font-family: $font-family-secondary;
     font-size: 126px;
     font-weight: 800;
-    text-align: v-bind(titlePosition);
   }
 
   &__subtitle {
-    text-align: v-bind(subtitlePosition);
+    line-height: 1.2;
   }
 }
 </style>

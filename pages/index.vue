@@ -5,11 +5,18 @@
   <SectionsMain class="section-main" />
   <div class="content">
     <SectionsWhy />
+    <SectionsPrograms />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .section-main {
   margin-bottom: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
 }
 </style>
