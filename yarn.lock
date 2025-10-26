@@ -2332,6 +2332,48 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.5.22.tgz#9d56a1644a3becb8af1e34655928b0e288d827f8"
   integrity sha512-F4yc6palwq3TT0u+FYf0Ns4Tfl9GRFURDN2gWG7L1ecIaS/4fCIuFOjMTnCyjsu/OK6vaDKLCrGAa+KvvH+h4w==
 
+"@yandex/ymaps3-context-menu@>=0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-context-menu/-/ymaps3-context-menu-0.0.2.tgz#c5b33f042713100b48337796b96192f9631318ad"
+  integrity sha512-i0/ALd6pzVssvzczgcRJH5SzL3dnehHRwFAwrRdVj/xdb5c5C6VTolr+HhBBh0BCbS+p+fOEVoAEIAibynyYfQ==
+
+"@yandex/ymaps3-default-ui-theme@>=0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-default-ui-theme/-/ymaps3-default-ui-theme-0.0.19.tgz#f13b7234c3c7841eb0fa057bc7fda905ddd27e4e"
+  integrity sha512-kjrlmrUQ9OnULbSnZ+AkwHeN/QG3B6rEUcA8MXs3ai33inyWU3n+ivsW2Ezbcw5e6+QiG4h5wg1c32qZJWI+ig==
+
+"@yandex/ymaps3-drawer-control@>=0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-drawer-control/-/ymaps3-drawer-control-0.0.2.tgz#ff8998fe1e6b91fb031f3feff1081e49b3b240f7"
+  integrity sha512-gy4MqNljXQdsqPznBb+Jk//4wTI1LdlamJE3MG9m3tHnVOM/9kH2xUQc+wsrIG1hPUqj10VrTw81A/oGA8Rjbw==
+
+"@yandex/ymaps3-minimap@>=0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-minimap/-/ymaps3-minimap-0.0.4.tgz#8adb990572bab8d14f853e741495858877837f95"
+  integrity sha512-Mw8WKNxVJZHPy9ZZPvU/3HscHXEfJKkcoRJSAAFysDfihpcdPRR8mc/zflFjQmg9VaaLLD9aSR7yT5O+EVpwZA==
+
+"@yandex/ymaps3-resizer@>=0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-resizer/-/ymaps3-resizer-0.0.2.tgz#66dfe02555664b9995fddafe385890b77c2986ac"
+  integrity sha512-1D/b8+GqrZOOXjuPYnffNBdpAtrUyfJPhPY6AaaJKdaF87Rx1JJKYARktblEIPjYjie9ksj3gnVKVh9OLPVLsQ==
+
+"@yandex/ymaps3-signpost@>=0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-signpost/-/ymaps3-signpost-0.0.2.tgz#191c66c1f794d51d5a150f31b3422b0bf12e25b4"
+  integrity sha512-p7UYkzrcfKloAPqcvK+rd2WHr1kW5ENLlwTtmY7B+bcjye32HALCmBn53VLnuUAl9xW6s6M1RGdJ8gdmubR5aQ==
+
+"@yandex/ymaps3-spinner@>=0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-spinner/-/ymaps3-spinner-0.0.2.tgz#6ef85d717d3b9c44c939c6dfcd0c0587fdb89820"
+  integrity sha512-nDze/MfYAn7JIbBOzYNBhrEhgF1RHnymJGT7W+y+uVKCTmaUaGXOMeZF2Z8+GuR3BvszZ73fWFE3IfGySOSw+g==
+  dependencies:
+    spin.js "^4.1.2"
+
+"@yandex/ymaps3-types@>=1.0.17734864":
+  version "1.0.17818622"
+  resolved "https://registry.yarnpkg.com/@yandex/ymaps3-types/-/ymaps3-types-1.0.17818622.tgz#e8dbf8e65e6d9d61fa7c6898267ce0d2330ef7dc"
+  integrity sha512-I2vCLc6iA+PVDssVFeWcFpCTgPcIqPtxAbPKDWAB4mpVk2sft5rjOa1dUUFkeB+Un5BSr2NS5kDfcqQPzEA+Eg==
+
 abbrev@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-3.0.1.tgz#8ac8b3b5024d31464fe2a5feeea9f4536bf44025"
@@ -7065,6 +7107,11 @@ speakingurl@^14.0.1:
   resolved "https://registry.yarnpkg.com/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
   integrity sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==
 
+spin.js@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/spin.js/-/spin.js-4.1.2.tgz#866180f0489ce90432201363e71c314f0db28824"
+  integrity sha512-ua/yEpxEwyEUWs57tMQYdik/KJ12sQRyMXjSlK/Ai927aEUDVY3FXUi4ml4VvlLCTQNIjC6tHyjSLBrJzFAqMA==
+
 srvx@^0.8.9:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/srvx/-/srvx-0.8.16.tgz#f2582bd747351b5b0a1c65bce8179bae83e8b2a6"
@@ -7920,6 +7967,20 @@ vue-tsc@^2.2.8:
   dependencies:
     "@volar/typescript" "2.4.15"
     "@vue/language-core" "2.2.12"
+
+vue-yandex-maps@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/vue-yandex-maps/-/vue-yandex-maps-2.2.3.tgz#a86d7dc55cfe3eec8f7e796f7a7314ca05e41214"
+  integrity sha512-4C7qt4Aakvjvtj3p8yhu7JbvL5ruvjQ7gZzdE96VsWkVVbVF1+razKzh34gMHaWSjzxPUyjymAdx7FsG3H1Htg==
+  dependencies:
+    "@yandex/ymaps3-context-menu" ">=0.0.2"
+    "@yandex/ymaps3-default-ui-theme" ">=0.0.19"
+    "@yandex/ymaps3-drawer-control" ">=0.0.2"
+    "@yandex/ymaps3-minimap" ">=0.0.4"
+    "@yandex/ymaps3-resizer" ">=0.0.2"
+    "@yandex/ymaps3-signpost" ">=0.0.2"
+    "@yandex/ymaps3-spinner" ">=0.0.2"
+    "@yandex/ymaps3-types" ">=1.0.17734864"
 
 vue@^3.5.22:
   version "3.5.22"
