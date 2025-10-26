@@ -74,6 +74,8 @@ import { main } from '~/data/sections'
     width: 100%;
     pointer-events: none;
 
+    z-index: -1;
+
     background: linear-gradient(rgba($bg-color, 0) 0%, $bg-color 100%);
   }
 }

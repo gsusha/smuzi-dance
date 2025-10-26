@@ -15,7 +15,13 @@ import LogoImage from '~/assets/images/logo.svg'
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: $container-width;
   padding: 30px 0;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   &__phone {
     background: $accent;
