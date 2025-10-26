@@ -15,6 +15,11 @@ defineProps<ContactsCtaProps>()
 
 <template>
   <div class="contacts-cta">
+    <div class="contacts-cta__video">
+      <video autoplay muted loop playsinline preload="none" poster="/contacts-poster.webp">
+        <source src="/contacts.webm" type="video/webm" />
+      </video>
+    </div>
     <div class="contacts-cta__content">
       <div class="contacts-cta__title">{{ title }}</div>
       <div class="contacts-cta__subtitle">{{ subtitle }}</div>
@@ -37,14 +42,40 @@ defineProps<ContactsCtaProps>()
   flex-direction: column;
   justify-content: center;
 
+  position: relative;
+
   width: 100%;
   height: 400px;
+  padding: 40px;
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: $black;
+      opacity: 0.5;
+      border-radius: 20px;
+    }
+  }
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     border-radius: 20px;
+    isolation: isolate;
   }
 
   &__title {
