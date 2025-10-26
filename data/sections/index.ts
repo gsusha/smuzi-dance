@@ -1,3 +1,4 @@
+export * from './contacts'
 export * from './feedback'
 export * from './main'
 export * from './programs'

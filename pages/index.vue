@@ -7,6 +7,7 @@
     <SectionsWhy />
     <SectionsPrograms />
     <SectionsFeedback />
+    <SectionsContacts />
   </div>
 </template>
 
