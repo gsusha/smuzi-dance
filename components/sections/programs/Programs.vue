@@ -32,7 +32,7 @@ import { HorizontalPosition } from '~/types'
       <SectionsProgramsTags :tags="programs.disciplines.tags" />
       <UiButton
         :text="programs.disciplines.button.text"
-        :icon-right="programs.disciplines.button.icon"
+        :icon="programs.disciplines.button.icon"
         :link="programs.disciplines.button.link"
       />
     </div>

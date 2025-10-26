@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 import LogoImage from '~/assets/images/logo.svg'
+import { phoneNumber } from '~/data/common'
 </script>
 
 <template>
   <header class="header">
     <LogoImage class="header__logo" />
-    <div class="header__phone">+79167359116</div>
+    <a class="header__phone" :href="`tel:${phoneNumber}`" target="_blank">{{ phoneNumber }}</a>
   </header>
 </template>
 
@@ -24,6 +25,7 @@ import LogoImage from '~/assets/images/logo.svg'
   transform: translateX(-50%);
 
   &__phone {
+    display: block;
     background: $accent;
     color: $text-color-secondary;
     font-family: $font-family-secondary;

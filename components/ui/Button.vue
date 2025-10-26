@@ -1,26 +1,33 @@
 <script lang="ts" setup>
+import { IconPosition } from '~/types'
+
 interface UiButtonProps {
   text?: string
-  iconLeft?: string
-  iconRight?: string
   link?: string
+  icon?: string
+  customIcon?: Component
+  iconPosition?: IconPosition
 }
 
-defineProps<UiButtonProps>()
+withDefaults(defineProps<UiButtonProps>(), {
+  iconPosition: IconPosition.Right,
+})
 </script>
 
 <template>
   <component :is="link ? 'a' : 'button'" :href="link" target="_blank" class="ui-button">
-    <span v-if="iconLeft" class="ui-button__icon ui-button__icon--left">
-      <Icon :name="iconLeft" :size="24" />
+    <span v-if="iconPosition === IconPosition.Left" class="ui-button__icon ui-button__icon--left">
+      <Icon v-if="icon" :name="icon" :size="24" />
+      <component v-else-if="customIcon" :is="customIcon" class="w-6 h-6" />
     </span>
 
     <span v-if="text" class="ui-button__text">
       {{ text }}
     </span>
 
-    <span v-if="iconRight" class="ui-button__icon ui-button__icon--right">
-      <Icon :name="iconRight" :size="24" />
+    <span v-if="iconPosition === IconPosition.Right" class="ui-button__icon ui-button__icon--right">
+      <Icon v-if="icon" :name="icon" :size="24" />
+      <component v-else-if="customIcon" :is="customIcon" class="w-6 h-6" />
     </span>
   </component>
 </template>

@@ -3,3 +3,8 @@ export enum HorizontalPosition {
   Right = 'right',
   Center = 'center',
 }
+
+export enum IconPosition {
+  Left = 'left',
+  Right = 'right',
+}

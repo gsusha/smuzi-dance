@@ -6,6 +6,7 @@
   <div class="content">
     <SectionsWhy />
     <SectionsPrograms />
+    <SectionsFeedback />
   </div>
 </template>
 

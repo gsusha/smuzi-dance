@@ -1,7 +1,14 @@
-export const TG_LINK = 'https://t.me/smuzidance'
+export const links = {
+  telegram: 'https://t.me/smuzidance',
+  yandex: '',
+  google: '',
+  twogis: '',
+}
 
 export const CTA_BUTTON = {
   text: 'Записаться',
   icon: 'mingcute:telegram-fill',
-  link: TG_LINK,
+  link: links.telegram,
 }
+
+export const phoneNumber = '+79167359116'

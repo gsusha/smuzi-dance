@@ -14,7 +14,7 @@ import { main } from '~/data/sections'
       <h1 class="main__content-title">
         {{ main.title }}
       </h1>
-      <UiButton :text="main.button.text" :icon-right="main.button.icon" :link="main.button.link" />
+      <UiButton :text="main.button.text" :icon="main.button.icon" :link="main.button.link" />
     </div>
 
     <div class="main__bottom" />
