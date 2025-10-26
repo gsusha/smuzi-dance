@@ -2,5 +2,6 @@
 </script>
 
 <template>
+  <SectionsMain />
   <SectionsWhy />
 </template>

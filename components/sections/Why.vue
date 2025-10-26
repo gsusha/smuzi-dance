@@ -8,12 +8,12 @@ const sentences = why.note
 </script>
 
 <template>
-  <div class="section-why">
+  <div class="why">
     <UiTitle :title="why.title" :subtitle="why.subtitle"/>
-    <div class="section-why__cards">
+    <div class="why__cards">
       <UiCard v-for="card in why.cards" :icon="card.icon" :title="card.title" :subtitle="card.subtitle"/>
     </div>
-    <div class="section-why__note">
+    <div class="why__note">
       <span v-for="(s, i) in sentences" :key="i">
         {{ s }}.
         <br/>
@@ -23,7 +23,7 @@ const sentences = why.note
 </template>
 
 <style lang="scss" scoped>
-.section-why {
+.why {
   display: flex;
   flex-direction: column;
   align-items: center;
