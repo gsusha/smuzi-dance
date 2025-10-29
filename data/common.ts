@@ -2,9 +2,9 @@ import type { LngLat } from '@yandex/ymaps3-types'
 
 export const links = {
   telegram: 'https://t.me/smuzidance',
-  yandex: '',
-  google: '',
-  twogis: '',
+  yandex: 'https://yandex.ru/maps/-/CLf3E019',
+  google: 'https://share.google/6fThhlywWVgD5s3jQ',
+  twogis: 'https://go.2gis.com/WJpjj',
   map: 'https://yandex.ru/maps/-/CLfRU-M0'
 }
 
