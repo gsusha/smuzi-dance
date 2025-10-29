@@ -1,12 +1,33 @@
 <script lang="ts" setup>
 import { CTA_BUTTON, MENU_ITEMS } from '~/data/common'
+import { useIntersectionObserver } from '@vueuse/core'
+
+const activeSection = ref<string | null>(null)
+
+onMounted(() => {
+  const sections = Array.from(document.querySelectorAll<HTMLElement>('[id]'))
+
+  sections.forEach(section => {
+    useIntersectionObserver(
+      section,
+      ([entry]) => {
+        console.log(entry)
+        if (entry?.isIntersecting) activeSection.value = entry.target.id
+      },
+      {
+        rootMargin: '-10% 0px -10% 0px',
+        threshold: 0.1,
+      }
+    )
+  })
+})
 </script>
 
 <template>
   <nav class="menu">
     <ul class="menu__items">
       <li v-for="item in MENU_ITEMS" :key="item.id">
-        <a class="menu__item" :href="item.slug">{{ item.name }}</a>
+        <a :class="['menu__item', { 'menu__item--active': item.id === activeSection }]" :href="item.slug">{{ item.name }}</a>
       </li>
       <li>
         <a class="menu__item menu__item--cta" :href="CTA_BUTTON.link" target="_blank">
@@ -51,6 +72,11 @@ import { CTA_BUTTON, MENU_ITEMS } from '~/data/common'
     &:hover {
       background: $white;
       color: $black;
+    }
+
+    &--active {
+      color: $black;
+      background: $accent;
     }
   }
 }

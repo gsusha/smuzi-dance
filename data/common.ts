@@ -22,7 +22,7 @@ export const address = 'Дом культуры «Прожектор» — 1-я 
 
 export const MENU_ITEMS = [
   {
-    id: 'about',
+    id: 'why',
     name: 'О нас',
     slug: '#why',
   },
