@@ -5,7 +5,7 @@ import { phoneNumber } from '~/data/common'
 
 <template>
   <header class="header">
-    <LogoImage class="header__logo" />
+    <a href="#"><LogoImage class="header__logo" /></a>
     <a class="header__phone" :href="`tel:${phoneNumber}`" target="_blank">{{ phoneNumber }}</a>
   </header>
 </template>

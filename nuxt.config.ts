@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: 'Work Sans',
+        name: 'Roboto',
         provider: 'google',
         weights: [400, 500, 600, 700],
         styles: ['normal'],

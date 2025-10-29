@@ -19,3 +19,26 @@ export const phoneNumber = '+79167359116'
 export const coordinates = [37.771067, 55.75862] as LngLat
 
 export const address = 'Дом культуры «Прожектор» — 1-я Владимирская ул., 10Б стр.3'
+
+export const MENU_ITEMS = [
+  {
+    id: 'about',
+    name: 'О нас',
+    slug: '#why',
+  },
+  {
+    id: 'programs',
+    name: 'Программы',
+    slug: '#programs',
+  },
+  {
+    id: 'feedback',
+    name: 'Отзывы',
+    slug: '#feedback',
+  },
+  {
+    id: 'contacts',
+    name: 'Контакты',
+    slug: '#contacts',
+  },
+]

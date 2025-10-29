@@ -6,6 +6,7 @@
     <slot/>
     <BaseFooter />
   </div>
+  <BaseMenu class="layouts-default__menu" />
 </template>
 
 <style lang="scss">
@@ -13,5 +14,12 @@
   max-width: $container-width;
   padding: 0 20px;
   margin: 0 auto;
+
+  &__menu {
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+  }
 }
 </style>

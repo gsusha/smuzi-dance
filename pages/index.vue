@@ -2,12 +2,12 @@
 </script>
 
 <template>
-  <SectionsMain class="section-main" />
+  <SectionsMain id="main" class="section-main" />
   <div class="content">
-    <SectionsWhy />
-    <SectionsPrograms />
-    <SectionsFeedback />
-    <SectionsContacts />
+    <SectionsWhy id="why" />
+    <SectionsPrograms id="programs" />
+    <SectionsFeedback id="feedback" />
+    <SectionsContacts id="contacts" />
   </div>
 </template>
 
