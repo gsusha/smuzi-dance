@@ -8,7 +8,7 @@ const sentences = why.note
 </script>
 
 <template>
-  <div class="why">
+  <section class="why">
     <UiTitle :title="why.title" :subtitle="why.subtitle" />
     <div class="why__cards">
       <UiCard
@@ -24,7 +24,7 @@ const sentences = why.note
         <br />
       </span>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

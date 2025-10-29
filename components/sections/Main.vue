@@ -3,7 +3,7 @@ import { main } from '~/data/sections'
 </script>
 
 <template>
-  <div class="main">
+  <section class="main">
     <div class="main__video">
       <video autoplay muted loop playsinline preload="none" poster="/poster.webp">
         <source src="/background.webm" type="video/webm" />
@@ -18,7 +18,7 @@ import { main } from '~/data/sections'
     </div>
 
     <div class="main__bottom" />
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

@@ -4,7 +4,7 @@ import { HorizontalPosition } from '~/types'
 </script>
 
 <template>
-  <div class="programs">
+  <section class="programs">
     <UiTitle
       :title="programs.title"
       :subtitle="programs.subtitle"
@@ -36,7 +36,7 @@ import { HorizontalPosition } from '~/types'
         :link="programs.disciplines.button.link"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

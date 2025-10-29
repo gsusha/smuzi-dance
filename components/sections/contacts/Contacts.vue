@@ -4,7 +4,7 @@ import { HorizontalPosition } from '~/types'
 </script>
 
 <template>
-  <div class="contacts">
+  <section class="contacts">
     <UiTitle
       :title="contacts.title"
       :subtitle="contacts.subtitle"
@@ -14,7 +14,7 @@ import { HorizontalPosition } from '~/types'
     <SectionsContactsCta v-bind="contacts.cta" />
     <div class="contacts__note">{{ contacts.note }}</div>
     <SectionsContactsMap />
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

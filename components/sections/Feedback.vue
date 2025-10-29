@@ -4,7 +4,7 @@ import { IconPosition } from '~/types'
 </script>
 
 <template>
-  <div class="feedback">
+  <section class="feedback">
     <UiTitle :title="feedback.title" :subtitle="feedback.subtitle" />
     <div class="feedback__content">
       <div class="feedback__reviews">
@@ -38,7 +38,7 @@ import { IconPosition } from '~/types'
         :icon-position="IconPosition.Left"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
