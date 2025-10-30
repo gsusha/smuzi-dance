@@ -1,5 +1,6 @@
 export * from './contacts'
 export * from './feedback'
+export * from './gallery'
 export * from './main'
 export * from './programs'
 export * from './why'
