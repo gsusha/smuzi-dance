@@ -37,13 +37,15 @@ const map = shallowRef<null | YMap>(null)
         </a>
       </YandexMapMarker>
     </YandexMap>
-    <div class="contacts-map__hint">
+    <h3 class="contacts-map__hint">
       {{ address }}
-    </div>
+    </h3>
   </a>
 </template>
 
 <style lang="scss">
+@use '@/assets/scss/media' as media;
+
 .contacts-map {
   display: block;
   position: relative;
@@ -76,6 +78,11 @@ const map = shallowRef<null | YMap>(null)
     background: $accent;
     color: $black;
     transition: 0.3s ease;
+
+    @include media.max('sm') {
+      top: 20px;
+      bottom: unset;
+    }
   }
 
   &:hover {

@@ -27,6 +27,10 @@
     @include media.max('sm') {
       bottom: 30px;
     }
+
+    @include media.max('xs') {
+      bottom: 20px;
+    }
   }
 
   &::before {

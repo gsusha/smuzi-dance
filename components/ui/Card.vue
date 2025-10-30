@@ -25,6 +25,8 @@ defineProps<UiCardProps>()
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .ui-card {
   padding: 20px 30px;
   background: $gray;
@@ -34,8 +36,12 @@ defineProps<UiCardProps>()
   align-items: center;
   gap: 20px;
 
+  @include media.max('xs') {
+    padding: 20px;
+  }
+
   &__icon {
-    flex: 0 0 50px;
+    flex-shrink: 0;
     width: 50px;
     height: 50px;
     background: $white;
@@ -61,12 +67,28 @@ defineProps<UiCardProps>()
   &__title {
     font-family: $font-family-secondary;
     line-height: 1.3;
+
+    @include media.max('sm') {
+      font-size: 14px;
+    }
+
+    @include media.max('xs') {
+      font-size: 12px;
+    }
   }
 
   &__subtitle {
     font-size: 14px;
     line-height: 1.2;
     opacity: 0.5;
+
+    @include media.max('sm') {
+      font-size: 12px;
+    }
+
+    @include media.max('xs') {
+      font-size: 10px;
+    }
   }
 }
 </style>

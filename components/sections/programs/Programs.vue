@@ -62,6 +62,7 @@ import { HorizontalPosition } from '~/types'
       padding-bottom: 100px;
 
       @include media.max('sm') {
+        padding-bottom: 70px;
         gap: 40px;
       }
 

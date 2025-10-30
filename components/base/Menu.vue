@@ -72,6 +72,11 @@ onMounted(() => {
       font-size: 10px;
     }
 
+    @include media.max('xs') {
+      padding: 4px 10px;
+      font-size: 8px;
+    }
+
     &:hover {
       background: $white;
       color: $black;

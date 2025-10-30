@@ -19,10 +19,9 @@ const sentences = why.note
       />
     </div>
     <div class="why__note">
-      <span v-for="(s, i) in sentences" :key="i">
+      <p v-for="(s, i) in sentences" :key="i">
         {{ s }}.
-        <br />
-      </span>
+      </p>
     </div>
   </section>
 </template>
@@ -59,6 +58,15 @@ const sentences = why.note
     line-height: 1.2;
     text-align: center;
     max-width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media.max('sm') {
+      font-size: 16px;
+      gap: 20px;
+    }
   }
 }
 </style>
