@@ -92,7 +92,7 @@ onMounted(() => {
       &:hover {
         background: $accent;
         color: $black;
-        box-shadow: 0 0 12px 4px rgba($accent, 0.6);
+        box-shadow: $shadow;
       }
     }
   }

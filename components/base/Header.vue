@@ -41,7 +41,7 @@ import { phoneNumber } from '~/data/common'
     transition: 0.3s ease;
 
     &:hover {
-      box-shadow: 0 0 12px 4px rgba($accent, 0.6);
+      box-shadow: $shadow;
     }
 
     @include media.max('sm') {

@@ -13,14 +13,11 @@ defineProps<UiGalleryProps>()
 <template>
   <LightGallery class="ui-gallery" :speed="500" :plugins="[lgZoom, lgThumbnail]">
     <a v-for="img in images" :key="img" :href="img">
-      <NuxtImg
+      <img
         class="ui-gallery__item"
         :src="img"
-        width="200"
-        height="200"
-        format="webp"
-        quality="60"
         loading="lazy"
+        alt=""
       />
     </a>
   </LightGallery>
@@ -37,10 +34,13 @@ defineProps<UiGalleryProps>()
     height: 200px;
     object-fit: cover;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: box-shadow 0.2s ease;
+
+    filter: grayscale(0.5);
 
     &:hover {
-      transform: scale(1.05);
+      box-shadow: $shadow;
+      filter: grayscale(0);
     }
   }
 }
