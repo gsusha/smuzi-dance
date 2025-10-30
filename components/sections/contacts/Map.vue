@@ -72,6 +72,13 @@ const map = shallowRef<null | YMap>(null)
 
     background: $accent;
     color: $black;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    .contacts-map__hint {
+      box-shadow: 0 0 12px 4px rgba($accent, 0.6);
+    }
   }
 }
 </style>

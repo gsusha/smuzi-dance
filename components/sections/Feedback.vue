@@ -96,11 +96,11 @@ import { IconPosition } from '~/types'
       justify-content: space-between;
       height: 100%;
       padding: 14px;
-      font-size: 10px;
+      font-size: 12px;
     }
 
     &-text {
-      font-size: 10px;
+      font-size: 12px;
       line-height: 1.2;
       color: $gray-light;
     }
@@ -108,6 +108,7 @@ import { IconPosition } from '~/types'
     &-author {
       color: $white;
       text-align: right;
+      font-weight: 500;
     }
   }
 

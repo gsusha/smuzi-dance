@@ -64,8 +64,9 @@ defineProps<UiCardProps>()
   }
 
   &__subtitle {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.2;
+    opacity: 0.5;
   }
 }
 </style>

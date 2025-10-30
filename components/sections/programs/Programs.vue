@@ -100,6 +100,7 @@ import { HorizontalPosition } from '~/types'
 
     &-description {
       font-size: 14px;
+      opacity: 0.5;
     }
   }
 
