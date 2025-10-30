@@ -7,7 +7,7 @@
 <style lang="scss" scoped>
 .ui-subtitle {
   width: 100%;
-  font-size: 48px;
+  font-size: clamp(26px, 4vw, 48px);
   font-family: $font-family-secondary;
   text-align: center;
 }

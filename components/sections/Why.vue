@@ -28,16 +28,30 @@ const sentences = why.note
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .why {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 100px;
 
+  @include media.max('sm') {
+    gap: 60px;
+  }
+
   &__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @include media.max('lg') {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media.max('md') {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__note {

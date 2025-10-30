@@ -22,6 +22,8 @@ import { main } from '~/data/sections'
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .main {
   display: flex;
   align-items: center;
@@ -64,10 +66,14 @@ import { main } from '~/data/sections'
 
     &-title {
       font-family: $font-family-secondary;
-      font-size: 48px;
+      font-size: clamp(26px, 5vw, 48px);
       text-align: center;
       line-height: 1.2;
       max-width: 70%;
+
+      @include media.max('md') {
+        max-width: unset;
+      }
     }
   }
 

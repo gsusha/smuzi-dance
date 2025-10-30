@@ -24,6 +24,8 @@ withDefaults(defineProps<UiTitleProps>(), {
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .ui-title {
   display: flex;
   flex-direction: column;
@@ -32,12 +34,16 @@ withDefaults(defineProps<UiTitleProps>(), {
 
   &__title {
     font-family: $font-family-secondary;
-    font-size: 126px;
+    font-size: clamp(32px, 8vw, 126px);
     font-weight: 800;
   }
 
   &__subtitle {
     line-height: 1.2;
+
+    @include media.max('md') {
+      font-size: 14px;
+    }
   }
 }
 </style>

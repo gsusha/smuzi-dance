@@ -46,10 +46,16 @@ defineProps<ProgramsTableProps>()
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .programs-table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 14px;
+
+  @include media.max('sm') {
+    font-size: 10px;
+  }
 
   &__header,
   &__row {

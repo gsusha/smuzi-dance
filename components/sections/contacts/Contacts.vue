@@ -18,10 +18,16 @@ import { HorizontalPosition } from '~/types'
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .contacts {
   display: flex;
   flex-direction: column;
   gap: 100px;
+
+  @include media.max('sm') {
+    gap: 60px;
+  }
 
   &__note {
     font-family: $font-family-secondary;

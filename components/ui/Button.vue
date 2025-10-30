@@ -33,6 +33,8 @@ withDefaults(defineProps<UiButtonProps>(), {
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .ui-button {
   display: inline-flex;
   align-items: center;
@@ -52,6 +54,14 @@ withDefaults(defineProps<UiButtonProps>(), {
   font-size: 16px;
 
   width: fit-content;
+
+  @include media.max('md') {
+    font-size: 14px;
+  }
+
+  @include media.max('sm') {
+    font-size: 12px;
+  }
 
   &__icon {
     display: flex;

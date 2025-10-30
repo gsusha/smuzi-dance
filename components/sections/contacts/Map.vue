@@ -61,7 +61,10 @@ const map = shallowRef<null | YMap>(null)
   &__hint {
     position: absolute;
     left: 20px;
+    right: 20px;
     bottom: 20px;
+
+    width: fit-content;
 
     background: $bg-color;
     padding: 10px 16px;

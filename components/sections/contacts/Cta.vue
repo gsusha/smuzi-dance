@@ -37,6 +37,8 @@ defineProps<ContactsCtaProps>()
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .contacts-cta {
   display: flex;
   flex-direction: column;
@@ -47,6 +49,11 @@ defineProps<ContactsCtaProps>()
   width: 100%;
   height: 400px;
   padding: 40px;
+
+  @include media.max('sm') {
+    height: 300px;
+    padding: 30px;
+  }
 
   &__video {
     position: absolute;
@@ -82,11 +89,29 @@ defineProps<ContactsCtaProps>()
   &__title {
     font-family: $font-family-secondary;
     font-size: 48px;
+
+    @include media.max('sm') {
+      font-size: 26px;
+    }
+  }
+
+  &__subtitle {
+    @include media.max('sm') {
+      font-size: 14px;
+      line-height: 1.2;
+    }
   }
 
   &__actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+
+    @include media.max('sm') {
+      .ui-button {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

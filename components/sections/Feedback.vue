@@ -42,16 +42,26 @@ import { IconPosition } from '~/types'
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .feedback {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 130px;
 
+  @include media.max('sm') {
+    gap: 60px;
+  }
+
   &__reviews {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @include media.max('lg') {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__review {
@@ -94,6 +104,8 @@ import { IconPosition } from '~/types'
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 10px;
+
       height: 100%;
       padding: 14px;
       font-size: 12px;
@@ -115,6 +127,15 @@ import { IconPosition } from '~/types'
   &__links {
     display: flex;
     gap: 20px;
+
+    @include media.max('sm') {
+      width: 100%;
+      flex-direction: column;
+
+      .ui-button {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

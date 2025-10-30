@@ -40,10 +40,16 @@ import { HorizontalPosition } from '~/types'
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .programs {
   display: flex;
   flex-direction: column;
   gap: 130px;
+
+  @include media.max('sm') {
+    gap: 60px;
+  }
 
   &__timeline {
     display: flex;
@@ -54,6 +60,10 @@ import { HorizontalPosition } from '~/types'
       gap: 60px;
       position: relative;
       padding-bottom: 100px;
+
+      @include media.max('sm') {
+        gap: 40px;
+      }
 
       &::before {
         content: '';
@@ -78,6 +88,8 @@ import { HorizontalPosition } from '~/types'
     &-circle {
       width: 21px;
       height: 21px;
+      flex-grow: 0;
+      flex-shrink: 0;
       border-radius: 50%;
       background: $accent;
     }
@@ -91,16 +103,33 @@ import { HorizontalPosition } from '~/types'
     &-age {
       color: $accent;
       font-family: $font-family-secondary;
+
+      @include media.max('sm') {
+        font-size: 14px;
+      }
     }
 
     &-title {
       font-size: 20px;
       font-family: $font-family-secondary;
+      line-height: 1.3;
+
+      @include media.max('md') {
+        font-size: 16px;
+      }
+
+      @include media.max('sm') {
+        font-size: 14px;
+      }
     }
 
     &-description {
       font-size: 14px;
       opacity: 0.5;
+
+      @include media.max('sm') {
+        font-size: 10px;
+      }
     }
   }
 
@@ -109,6 +138,10 @@ import { HorizontalPosition } from '~/types'
     display: flex;
     flex-direction: column;
     gap: 60px;
+
+    @include media.max('sm') {
+      gap: 40px;
+    }
   }
 
   &__disciplines {

@@ -39,6 +39,8 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/media' as media;
+
 .menu {
   border-radius: 8px;
   border: 1px solid $border-menu-color;
@@ -47,7 +49,6 @@ onMounted(() => {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   overflow: hidden;
-
 
   &__items {
     display: flex;
@@ -63,7 +64,13 @@ onMounted(() => {
     font-weight: 500;
     border-radius: 4px;
     color: $white;
+    white-space: nowrap;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    @include media.max('sm') {
+      padding: 4px 10px;
+      font-size: 10px;
+    }
 
     &:hover {
       background: $white;

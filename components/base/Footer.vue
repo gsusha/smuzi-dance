@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .footer {
-  padding: 50px 0;
+  padding: 200px 0;
   text-align: center;
   font-family: $font-family-secondary;
   font-weight: 700;

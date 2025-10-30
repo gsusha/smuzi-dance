@@ -13,11 +13,17 @@
 </template>
 
 <style lang="scss">
+@use '@/assets/scss/media' as media;
+
 .layouts-default {
   &__wrapper {
     max-width: $container-width;
     padding: 0 40px;
     margin: 0 auto;
+
+    @include media.max('sm') {
+      padding: 0 20px;
+    }
   }
 
   position: relative;
@@ -27,6 +33,10 @@
     left: 50%;
     bottom: 50px;
     transform: translateX(-50%);
+
+    @include media.max('sm') {
+      bottom: 30px;
+    }
   }
 
   &::before {
