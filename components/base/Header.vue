@@ -25,6 +25,7 @@ import { phoneNumber } from '~/data/common'
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
 
   @include media.max('sm') {
     padding: 20px;
