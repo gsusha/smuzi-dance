@@ -16,6 +16,8 @@ defineProps<UiGalleryProps>()
       <NuxtImg
         class="ui-gallery__item"
         :src="img"
+        width="200"
+        height="200"
         format="webp"
         quality="60"
         loading="lazy"
