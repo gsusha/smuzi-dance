@@ -10,6 +10,7 @@ import { IconPosition } from '~/types'
       <div class="feedback__reviews">
         <div v-for="review in feedback.reviews" :key="review.id" class="feedback__review">
           <div class="feedback__review-image">
+            <img class="feedback__review-image-file" :src="review.img" alt="" />
             <div class="feedback__review-rate">
               <Icon
                 class="feedback__review-rate-icon"
@@ -80,6 +81,14 @@ import { IconPosition } from '~/types'
       background: rgba($accent, 0.4);
       border-radius: 0 50px 0 8px;
       position: relative;
+
+      &-file {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 100px;
+      }
     }
 
     &-rate {
