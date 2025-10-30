@@ -11,7 +11,6 @@ onMounted(() => {
     useIntersectionObserver(
       section,
       ([entry]) => {
-        console.log(entry)
         if (entry?.isIntersecting) activeSection.value = entry.target.id
       },
       {
