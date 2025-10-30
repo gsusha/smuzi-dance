@@ -5,8 +5,8 @@ import { main } from '~/data/sections'
 <template>
   <section class="main">
     <div class="main__video">
-      <video autoplay muted loop playsinline preload="none" poster="/poster.webp">
-        <source src="/background.webm" type="video/webm" />
+      <video autoplay muted loop playsinline preload="none" poster="/video/poster.webp">
+        <source src="/video/background.webm" type="video/webm" />
       </video>
     </div>
 

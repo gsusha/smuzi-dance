@@ -33,7 +33,7 @@ const map = shallowRef<null | YMap>(null)
       <YandexMapDefaultFeaturesLayer />
       <YandexMapMarker :settings="{ coordinates: coordinates }">
         <a :href="links.map" target="_blank">
-          <img src="/pin.svg" alt="" />
+          <img src="/images/pin.svg" alt="" />
         </a>
       </YandexMapMarker>
     </YandexMap>

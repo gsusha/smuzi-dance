@@ -16,8 +16,8 @@ defineProps<ContactsCtaProps>()
 <template>
   <div class="contacts-cta">
     <div class="contacts-cta__video">
-      <video autoplay muted loop playsinline preload="none" poster="/contacts-poster.webp">
-        <source src="/contacts.webm" type="video/webm" />
+      <video autoplay muted loop playsinline preload="none" poster="/video/contacts-poster.webp">
+        <source src="/video/contacts.webm" type="video/webm" />
       </video>
     </div>
     <div class="contacts-cta__content">
