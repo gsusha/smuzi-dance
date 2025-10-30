@@ -15,12 +15,12 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Smuzi Dance',
+      title: 'Smuzi Dance | Студия танцев',
       meta: [
         { name: 'description', content: 'Студия танцев' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
   css: ['@/assets/scss/index.scss'],
