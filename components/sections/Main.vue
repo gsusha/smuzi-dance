@@ -10,7 +10,7 @@ import { main } from '~/data/sections'
       </video>
     </div>
 
-    <div class="main__content">
+    <div class="main__content container">
       <h1 class="main__content-title">
         {{ main.title }}
       </h1>
@@ -29,7 +29,10 @@ import { main } from '~/data/sections'
   align-items: center;
   justify-content: center;
 
+  width: 100%;
   height: 100vh;
+
+  position: relative;
 
   &__video {
     position: absolute;

@@ -14,3 +14,13 @@ body {
   color: variables.$text-color-primary;
   margin: 0;
 }
+
+.container {
+  max-width: variables.$container-width;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @include media.max('sm') {
+    padding: 0 20px;
+  }
+}

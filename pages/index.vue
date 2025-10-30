@@ -3,7 +3,7 @@
 
 <template>
   <SectionsMain id="main" class="section-main" />
-  <div class="content">
+  <div class="content container">
     <SectionsWhy id="why" />
     <SectionsPrograms id="programs" />
     <SectionsFeedback id="feedback" />

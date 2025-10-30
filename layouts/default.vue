@@ -16,16 +16,6 @@
 @use '@/assets/scss/media' as media;
 
 .layouts-default {
-  &__wrapper {
-    max-width: $container-width;
-    padding: 0 40px;
-    margin: 0 auto;
-
-    @include media.max('sm') {
-      padding: 0 20px;
-    }
-  }
-
   position: relative;
 
   &__menu {
