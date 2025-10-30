@@ -8,6 +8,7 @@
     <SectionsPrograms id="programs" />
     <SectionsFeedback id="feedback" />
     <SectionsContacts id="contacts" />
+    <SectionsGallery />
   </div>
 </template>
 

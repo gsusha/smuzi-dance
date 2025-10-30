@@ -6,7 +6,14 @@ export default defineNuxtConfig({
     preset: 'static',
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/fonts', 'nuxt-svgo', 'vue-yandex-maps/nuxt'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/icon',
+    '@nuxt/fonts',
+    'nuxt-svgo',
+    'vue-yandex-maps/nuxt',
+    '@nuxt/image',
+  ],
   alias: {
     '@img': '/assets/img',
     '@ui': '/components/ui',
