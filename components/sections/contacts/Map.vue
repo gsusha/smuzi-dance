@@ -27,6 +27,7 @@ const map = shallowRef<null | YMap>(null)
       }"
       width="100%"
       height="300px"
+      :zIndex="-1"
     >
       <YandexMapDefaultSchemeLayer />
       <YandexMapDefaultFeaturesLayer />

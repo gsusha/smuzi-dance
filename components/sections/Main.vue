@@ -31,8 +31,12 @@ import { main } from '~/data/sections'
 
   &__video {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: -1;
+
+    height: 100vh;
     pointer-events: none;
 
     video {
@@ -45,6 +49,7 @@ import { main } from '~/data/sections'
       content: '';
       position: absolute;
       inset: 0;
+      z-index: 2;
       background: $black;
       opacity: 0.3;
     }
@@ -55,6 +60,7 @@ import { main } from '~/data/sections'
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    isolation: isolate;
 
     &-title {
       font-family: $font-family-secondary;

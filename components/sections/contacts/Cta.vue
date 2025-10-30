@@ -51,6 +51,7 @@ defineProps<ContactsCtaProps>()
   &__video {
     position: absolute;
     inset: 0;
+    z-index: -1;
     pointer-events: none;
 
     video {
