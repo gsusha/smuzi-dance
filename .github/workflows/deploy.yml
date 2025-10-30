@@ -24,5 +24,5 @@ jobs:
           server: j99832877.myjino.ru
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist
-          server-dir: /
+          local-dir: dist/
+          server-dir: /domains/smuzidance.ru/
