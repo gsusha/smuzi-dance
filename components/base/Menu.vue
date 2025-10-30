@@ -63,11 +63,7 @@ onMounted(() => {
     font-weight: 500;
     border-radius: 4px;
     color: $white;
-    transition: background-color 0.3s ease;
-
-    &--cta {
-      color: $accent;
-    }
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       background: $white;
@@ -77,6 +73,16 @@ onMounted(() => {
     &--active {
       color: $black;
       background: $accent;
+    }
+
+    &--cta {
+      color: $accent;
+
+      &:hover {
+        background: $accent;
+        color: $black;
+        box-shadow: 0 0 12px 4px rgba($accent, 0.6);
+      }
     }
   }
 }

@@ -16,7 +16,7 @@
 .layouts-default {
   &__wrapper {
     max-width: $container-width;
-    padding: 0 20px;
+    padding: 0 40px;
     margin: 0 auto;
   }
 

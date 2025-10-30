@@ -1,6 +1,7 @@
 @use "null";
 @use 'variables';
 @use 'mixins';
+@use 'media' as media;
 
 html {
   scroll-behavior: smooth;

@@ -17,7 +17,7 @@ import { phoneNumber } from '~/data/common'
   justify-content: space-between;
   width: 100%;
   max-width: $container-width;
-  padding: 30px 0;
+  padding: 30px 40px;
 
   position: fixed;
   top: 0;
@@ -27,10 +27,15 @@ import { phoneNumber } from '~/data/common'
   &__phone {
     display: block;
     background: $accent;
-    color: $text-color-secondary;
+    color: $black;
     font-family: $font-family-secondary;
-    padding: 4px;
+    padding: 4px 8px;
     border-radius: 2px;
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 12px 4px rgba($accent, 0.6);
+    }
   }
 }
 </style>

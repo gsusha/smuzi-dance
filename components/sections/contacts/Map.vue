@@ -14,7 +14,7 @@ const map = shallowRef<null | YMap>(null)
 </script>
 
 <template>
-  <div class="contacts-map">
+  <a class="contacts-map" :href="links.map" target="_blank">
     <YandexMap
       class="contacts-map__map"
       v-model="map"
@@ -37,15 +37,17 @@ const map = shallowRef<null | YMap>(null)
         </a>
       </YandexMapMarker>
     </YandexMap>
-    <a class="contacts-map__hint" :href="links.map" target="_blank">
+    <div class="contacts-map__hint">
       {{ address }}
-    </a>
-  </div>
+    </div>
+  </a>
 </template>
 
 <style lang="scss">
 .contacts-map {
+  display: block;
   position: relative;
+  cursor: pointer;
 
   canvas {
     filter: grayscale(1) brightness(0.5);
@@ -65,16 +67,11 @@ const map = shallowRef<null | YMap>(null)
     padding: 10px 16px;
     border-radius: 10px;
 
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
 
     background: $accent;
     color: $black;
-
-    transition: all 0.2s ease;
-
-    &:hover {
-      box-shadow: 0 0 12px 4px rgba($accent, 0.6);
-    }
   }
 }
 </style>
